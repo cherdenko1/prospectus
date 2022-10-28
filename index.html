@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			* {
+				margin: 0px;
+			}
+			.web-logo { 
+				width: 130px * 1.5px;
+				height: 130px;
+			}
+			p {
+				font-family: sans-serif;
+			}
+
+			.main-container {
+				display: flex;
+				flex-direction: column;
+				padding-bottom: 20px;
+			}
+
+			/*Header Styles*/
+			header {
+				display: flex;
+				flex-direction: row;
+				padding-left: 5%;
+			}
+			.header-text {
+				padding-top: 15px;
+				padding-left: 20px;
+			}
+			.college {
+				font-size: 40px;
+			}
+			.course {
+				font-size: 20px;
+				font-weight: bold;
+			}
+			.info-etc {
+				font-style: italic;
+			}
+
+			/* Each year table template */
+			.year-label {
+				text-align: center;
+				margin: auto;
+				width: 95%;
+				background-color: aqua;
+				padding: 2px;
+			}
+			.table-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			/* Table style */
+			table, tr, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+				padding: 2px;
+				font-family: sans-serif;
+				font-size: 14px;
+			}
+			table {
+				width: 47%;
+				margin-left: 10px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+
+			/* SUBJECT COLOR IMPORTANCE */
+			.subject-green {
+				color: rgb(45, 87, 11);
+			}
+			.subject-red {
+				color: rgb(172, 24, 24);
+			}
+			.subject-blue {
+				color: rgb(30, 21, 110);
+			}
+
+			.green-circle {
+				border-radius: 100%;
+				background-color: green;
+				width: 20px;
+				height: 20px;
+				margin: 4px;
+			}
+
+			.summer-info {
+				width: 47%;
+				margin-left: 10px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				padding-top: 50px;
+			}
+
+			.no-subject *{
+				background-color: rgb(175, 175, 175);
+				padding: 10px;
+			}
+
+			/* Color per year */
+
+			/* First Year */
+			#label-first {
+				color: white;
+				background-color: rgb(52, 87, 23);
+			}
+			#sem-no-first {
+				color: white;
+				background-color: rgb(121, 172, 79);
+			}
+			#table-header-first {
+				color: black;
+				background-color: rgb(210, 248, 179);
+			}
+			#semester-first {
+				color: black;
+				background-color: rgb(158, 214, 113);
+			}
+
+			/* Second Year */
+			#label-second {
+				color: white;
+				background-color: rgb(161, 94, 39);
+			}
+			#sem-no-second {
+				color: white;
+				background-color: rgb(202, 87, 10);
+			}
+			#table-header-second {
+				color: black;
+				background-color: rgb(255, 214, 190);
+			}
+			#semester-second {
+				color: black;
+				background-color: rgb(248, 173, 130);
+			}
+
+			/* Third Year */
+			#label-third {
+				color: white;
+				background-color: rgb(122, 24, 62);
+			}
+			#sem-no-third {
+				color: white;
+				background-color: rgb(141, 50, 85);
+			}
+			#table-header-third {
+				color: black;
+				background-color: rgb(255, 175, 206);
+			}
+			#semester-third {
+				color: black;
+				background-color: rgb(190, 113, 143);
+			}
+
+			/* Summer */
+			#label-summer {
+				color: white;
+				background-color: rgb(65, 65, 65);
+			}
+			#sem-no-summer {
+				color: white;
+				background-color: rgb(122, 122, 122);
+			}
+			#table-header-summer {
+				color: black;
+				background-color: rgb(185, 185, 185);
+			}
+			#semester-summer {
+				color: black;
+				background-color: rgb(207, 207, 207);
+			}
+
+			/* Fourth Year */
+			#label-fourth {
+				color: white;
+				background-color: rgb(63, 65, 168);
+			}
+			#sem-no-fourth {
+				color: white;
+				background-color: rgb(80, 124, 175)
+			}
+			#table-header-fourth {
+				color: black;
+				background-color: rgb(185, 185, 185);
+			}
+			#semester-fourth {
+				color: black;
+				background-color: rgb(207, 207, 207);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main-container">
+
+			<header>
+				<img class="web-logo" src="uc_logo.jpg" alt="uc_logo"/>
+				<div class="header-text">
+					<h1 class="college">College of Computer Science (CCS)</h1>
+					<p class="course">Bachelor of Science in Information Technology (BSIT)</p>
+					<p class="info-etc">Effective School Year 2020-2021 | <b>Based on CMO No. 25 series of 2015</b></p>
+				</div>
+			</header>
+
+			<!--First Year Block-->
+			<div class="year" style="margin-top: 10px">
+				<p class="year-label" id="label-first">I - FIRST YEAR</p>
+
+				<!--First Year Tables-->
+				<div class="table-container">
+
+					<!--First Semester-->
+					<table>
+						<tr align="center" id="table-header-first">
+							<td id="sem-no-first" rowspan="2">1</td>
+							<td rowspan="2" style="writing-mode:sideways-lr; padding-right: 20px">Grades</td>
+							<td rowspan="2">Course Code</td>
+							<td rowspan="2">Descriptive Title</td>
+							<td colspan="3">Units</td>
+							<td rowspan="2">Pre-requisites <br />/ Remarks</td>
+						</tr>
+
+						<tr align="center" style="font-size: 10px" id="table-header-first">
+							<td>LEC</td>
+							<td>LAB</td>
+							<td>TOTAL</td>
+						</tr>
+
+						<tr>
+							<td id="semester-first" rowspan="10" style="writing-mode:sideways-lr; padding-right: 20px;">1st Semester</td>
+							<td> </td>
+							<td>ENG 100</td>
+							<td class="subject-green">Communication Arts</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>ST 101</td>
+							<td class="subject-green">Living in the IT era</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>MATH 100</td>
+							<td class="subject-green">College Mathematics</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>PSYCH 100</td>
+							<td class="subject-green">Understanding the Self</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-INTCOM11</td>
+							<td class="subject-red">Introduction to Computing</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-COMPROG11</td>
+							<td class="subject-red">Computer Programming 1</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-WEBDEV11</td>
+							<td class="subject-blue">Website Design & Development</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>PE 101</td>
+							<td>Movement Enhancement</td>
+							<td>2</td>
+							<td> </td>
+							<td>2</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>NSTP 101</td>
+							<td>Nat'l Service Training Program 1</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr id="table-header-first">
+							<td colspan="3" style="text-align: right">Total</td>
+							<td colspan="3" style="text-align: right"> 26</td>
+							<td> </td>
+						</tr>
+					</table>
+
+					<!--Second Semester-->
+					<table>
+						<tr align="center" id="table-header-first">
+							<td id="sem-no-first" rowspan="2">2</td>
+							<td rowspan="2" style="writing-mode:sideways-lr; padding-right: 20px">Grades</td>
+							<td rowspan="2">Course Code</td>
+							<td rowspan="2">Descriptive Title</td>
+							<td colspan="3">Units</td>
+							<td rowspan="2">Pre-requisites <br />/ Remarks</td>
+						</tr>
+
+						<tr align="center" style="font-size: 10px" id="table-header-first">
+							<td>LEC</td>
+							<td>LAB</td>
+							<td>TOTAL</td>
+						</tr>
+
+						<tr>
+							<td id="semester-first" rowspan="10" style="writing-mode:sideways-lr; padding-right: 20px;">2nd Semester</td>
+							<td> </td>
+							<td>ENG 101</td>
+							<td class="subject-green">Purposive Communication</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>ENG 100</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>ENTREP 101</td>
+							<td class="subject-green">The Entrepreneurial Mind</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>MATH 101</td>
+							<td class="subject-green">Mathematics in the Modern World</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>Math 100</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>HIST 101</td>
+							<td class="subject-green">Readings in Philippine History</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>HUM 101</td>
+							<td class="subject-green">Art Appreciation</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-COMPROG12</td>
+							<td class="subject-red">Computer Programming 2</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>CC-COMPROG11</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-DISCRET12</td>
+							<td class="subject-blue">Discrete Structures</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>CC-INTCOM11</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>PE 102</td>
+							<td>Fitness Enhancement</td>
+							<td>2</td>
+							<td> </td>
+							<td>2</td>
+							<td>PE 101</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>NSTP 102</td>
+							<td>Nat'l Service Training Program 2</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>NSTP 101</td>
+						</tr>
+
+						<tr id="table-header-first">
+							<td colspan="3" style="text-align: right">Total</td>
+							<td colspan="3" style="text-align: right"> 26</td>
+							<td> </td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!--Second Year Block-->
+			<div class="year" style="margin-top: 10px">
+				<p class="year-label" id="label-second">II - SECOND YEAR</p>
+
+				<!--Second Year Tables-->
+				<div class="table-container">
+
+					<!--Second Year - First Semester-->
+					<table>
+						<tr align="center" id="table-header-second">
+							<td id="sem-no-second" rowspan="2">3</td>
+							<td rowspan="2" style="writing-mode:sideways-lr; padding-right: 20px">Grades</td>
+							<td rowspan="2">Course Code</td>
+							<td rowspan="2">Descriptive Title</td>
+							<td colspan="3">Units</td>
+							<td rowspan="2">Pre-requisites <br />/ Remarks</td>
+						</tr>
+
+						<tr align="center" style="font-size: 10px" id="table-header-second">
+							<td>LEC</td>
+							<td>LAB</td>
+							<td>TOTAL</td>
+						</tr>
+
+						<tr>
+							<td id="semester-second" rowspan="9" style="writing-mode:sideways-lr; padding-right: 20px;">1st Semester</td>
+							<td> </td>
+							<td>SOCIO 100</td>
+							<td class="subject-green">The Contemporary World</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>RIZAL 101</td>
+							<td class="subject-green">Life, Works & Writings of Dr. Jose Rizal</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-DIGILOG21</td>
+							<td class="subject-blue">Digital Logic Design</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>CC-DISCRET12</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-DASTRUCT21</td>
+							<td class="subject-red">Data Structures & Algorithms</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>CC-COMPROG12</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-OOPROG21</td>
+							<td class="subject-blue">Object Oriented Programming</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>CC-COMPROG12</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-ACCTG21</td>
+							<td class="subject-blue">Accounting for IT</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>MATH 101</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-TWRITE21</td>
+							<td class="subject-blue">Tech, Writing, & Presentation Skills in IT</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>ENG101, CC-INTCOM11</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>PE 103</td>
+							<td>Phys. Activity Towards Health & Fitness 1 </td>
+							<td>2</td>
+							<td> </td>
+							<td>2</td>
+							<td>PE 102</td>
+						</tr>
+
+						<tr id="table-header-second">
+							<td colspan="3" style="text-align: right">Total</td>
+							<td colspan="3" style="text-align: right"> 23</td>
+							<td> </td>
+						</tr>
+					</table>
+
+					<!--Second Year - Second Semester-->
+					<table>
+						<tr align="center" id="table-header-second">
+							<td id="sem-no-second" rowspan="2">4</td>
+							<td rowspan="2" style="writing-mode:sideways-lr; padding-right: 20px">Grades</td>
+							<td rowspan="2">Course Code</td>
+							<td rowspan="2">Descriptive Title</td>
+							<td colspan="3">Units</td>
+							<td rowspan="2">Pre-requisites <br />/ Remarks</td>
+						</tr>
+
+						<tr align="center" style="font-size: 10px" id="table-header-second">
+							<td>LEC</td>
+							<td>LAB</td>
+							<td>TOTAL</td>
+						</tr>
+
+						<tr>
+							<td id="semester-second" rowspan="9" style="writing-mode:sideways-lr; padding-right: 20px;">2nd Semester</td>
+							<td> </td>
+							<td>STS 101</td>
+							<td class="subject-green">Science, Technology, and Society</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>ENG 100</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>PHILO 101</td>
+							<td class="subject-green">Ethics</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td> </td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-QUAMETH22</td>
+							<td class="subject-blue">Quantitative Methods w/ Prob. Stat.</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>CC-DISCRET12</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-PLATECH22</td>
+							<td class="subject-blue">Platform Technologies w/ Op. Sys.</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>CC-DIGILOG21</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-APPSDEV22</td>
+							<td class="subject-red">Applications Dev't & Emerging Tech</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>CC-DATSTRUC21</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-DATACOM22</td>
+							<td class="subject-blue">Data Communications</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>CC-DIGILOG21</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-SAD22</td>
+							<td class="subject-blue">System Analysis & Design</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>IT-OOPROG21</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>PE 104</td>
+							<td>Phys. Activity Towards Health & Fitness 2</td>
+							<td>2</td>
+							<td> </td>
+							<td>2</td>
+							<td>PE 103</td>
+						</tr>
+
+						<tr id="table-header-second">
+							<td colspan="3" style="text-align: right">Total</td>
+							<td colspan="3" style="text-align: right"> 23</td>
+							<td> </td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!--Third Year Block-->
+			<div class="year" style="margin-top: 10px">
+				<p class="year-label" id="label-third">III - THIRD YEAR</p>
+
+				<!--Third Year Tables-->
+				<div class="table-container">
+
+					<!--Third Year - First Semester-->
+					<table>
+						<tr align="center" id="table-header-third">
+							<td id="sem-no-third" rowspan="2">5</td>
+							<td rowspan="2" style="writing-mode:sideways-lr; padding-right: 20px">Grades</td>
+							<td rowspan="2">Course Code</td>
+							<td rowspan="2">Descriptive Title</td>
+							<td colspan="3">Units</td>
+							<td rowspan="2">Pre-requisites <br />/ Remarks</td>
+						</tr>
+
+						<tr align="center" style="font-size: 10px" id="table-header-third">
+							<td>LEC</td>
+							<td>LAB</td>
+							<td>TOTAL</td>
+						</tr>
+
+						<tr>
+							<td id="semester-third" rowspan="9" style="writing-mode:sideways-lr; padding-right: 20px;">1st Semester</td>
+							<td> </td>
+							<td>IT-IMDBSYS31</td>
+							<td class="subject-red">Information Management (DB Sys.1)</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>CC-APPSDEV22</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-NETWORK31</td>
+							<td class="subject-blue">Computer Networks</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>CC-DATACOM22</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-TESTQUA31</td>
+							<td class="subject-blue">Testing & Quality Assurance</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>IT-SAD22</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-HCI31</td>
+							<td class="subject-blue">Human Computer Interaction</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>IT-SAD22</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-RESCOM31</td>
+							<td class="subject-blue">Methods of Research in Computing</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>CC-TWRITE21, CC-QUAMETH22</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-EL_ _ _ _ _ _</td>
+							<td>IT Elective 1</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>
+								<div class="green-circle"></div>
+							</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-FRE_ _ _ _ _</td>
+							<td>Free Elective 1</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td style="display: flex; flex-direction: row; border: none">
+								<div class="green-circle"></div>
+								<div class="green-circle"></div>
+							</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-FRE_ _ _ _ _</td>
+							<td>Free Elective 2	</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td style="display: flex; flex-direction: row; border: none">
+								<div class="green-circle"></div>
+								<div class="green-circle"></div>
+							</td>
+						</tr>
+
+						<tr id="table-header-second">
+							<td colspan="3" style="text-align: right">Total</td>
+							<td colspan="3" style="text-align: right"> 24</td>
+							<td> </td>
+						</tr>
+					</table>
+
+					<!--Third Year - Second Semester-->
+					<table>
+						<tr align="center" id="table-header-third">
+							<td id="sem-no-third" rowspan="2">4</td>
+							<td rowspan="2" style="writing-mode:sideways-lr; padding-right: 20px">Grades</td>
+							<td rowspan="2">Course Code</td>
+							<td rowspan="2">Descriptive Title</td>
+							<td colspan="3">Units</td>
+							<td rowspan="2">Pre-requisites <br />/ Remarks</td>
+						</tr>
+
+						<tr align="center" style="font-size: 10px" id="table-header-third">
+							<td>LEC</td>
+							<td>LAB</td>
+							<td>TOTAL</td>
+						</tr>
+
+						<tr>
+							<td id="semester-third" rowspan="9" style="writing-mode:sideways-lr; padding-right: 20px;">2nd Semester</td>
+							<td> </td>
+							<td>IT-IMDBSYS32</td>
+							<td class="subject-blue">Information Management (DB Sys. 2)</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>IT-IMDBSYS31</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-INFOSEC32</td>
+							<td class="subject-blue">Information Assurance & Security</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>IT-IMDBSYS31</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-SYSARCH32</td>
+							<td class="subject-blue">System Integration & Architecture</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>IT-TESTQUA31, CC-HCI31</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-TECHO32</td>
+							<td class="subject-blue">Technopreneurship</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>CC-RESCOM31</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-INTPROG32</td>
+							<td class="subject-blue">Integrative Prog'g & Technologies</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>IT-IMDBSYS31</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-SYSADMN32</td>
+							<td class="subject-blue">Systems Administration & Maintenance</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>IT-NETWORK31</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-EL_ _ _ _ _ _</td>
+							<td>IT Elective 2</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>
+								<div class="green-circle"></div>
+							</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-FRE_ _ _ _ _</td>
+							<td>Free Elective 3</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td style="display: flex; flex-direction: row; border: none">
+								<div class="green-circle"></div>
+								<div class="green-circle"></div>
+							</td>
+						</tr>
+
+						<tr id="table-header-second">
+							<td colspan="3" style="text-align: right">Total</td>
+							<td colspan="3" style="text-align: right"> 24</td>
+							<td> </td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!--Summer Block-->
+			<div class="year" style="margin-top: 10px">
+				<p class="year-label" id="label-summer">SUMMER</p>
+
+				<!--Third Year Tables-->
+				<div class="table-container">
+
+					<!--Third Year - First Semester-->
+					<table>
+						<tr align="center" id="table-header-summer">
+							<td id="sem-no-summer" rowspan="2"> </td>
+							<td rowspan="2" style="writing-mode:sideways-lr; padding-right: 20px">Grades</td>
+							<td rowspan="2">Course Code</td>
+							<td rowspan="2">Descriptive Title</td>
+							<td colspan="3">Units</td>
+							<td rowspan="2">Pre-requisites <br />/ Remarks</td>
+						</tr>
+
+						<tr align="center" style="font-size: 10px" id="table-header-summer">
+							<td>LEC</td>
+							<td>LAB</td>
+							<td>TOTAL</td>
+						</tr>
+
+						<tr>
+							<td id="semester-summer" rowspan="3" style="writing-mode:sideways-lr; padding-right: 20px;">SUMMER</td>
+							<td> </td>
+							<td>IT-CPSTONE30</td>
+							<td class="subject-blue">Capstone Project 1</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td style="color:rgb(172, 24, 24)">* * *</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>CC-PROFIS10</td>
+							<td class="subject-blue">Professional Issues in Computing</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td style="color:rgb(172, 24, 24)">* *</td>
+						</tr>
+
+						<tr id="table-header-summer">
+							<td colspan="3" style="text-align: right">Total</td>
+							<td colspan="3" style="text-align: right"> 6</td>
+							<td> </td>
+						</tr>
+					</table>
+
+					<div class="summer-info">
+						<p>* * must finish all 1st year to 2nd year courses</p>
+						<p>* * * must finish all 1st year to 3rd year courses</p>
+						<p>* * * * must finish all academic courses and must be taken solely in a semester </p>
+					</div>
+
+				</div>
+			</div>
+
+			<!--Fourth Block-->
+			<div class="year" style="margin-top: 10px">
+				<p class="year-label" id="label-fourth">IV - FOURTH YEAR</p>
+
+				<!--Fourth Year Tables-->
+				<div class="table-container">
+
+					<!--Fourth Year - First Semester-->
+					<table>
+						<tr align="center" id="table-header-fourth">
+							<td id="sem-no-fourth" rowspan="2">7</td>
+							<td rowspan="2" style="writing-mode:sideways-lr; padding-right: 20px">Grades</td>
+							<td rowspan="2">Course Code</td>
+							<td rowspan="2">Descriptive Title</td>
+							<td colspan="3">Units</td>
+							<td rowspan="2">Pre-requisites <br />/ Remarks</td>
+						</tr>
+
+						<tr align="center" style="font-size: 10px" id="table-header-fourth">
+							<td>LEC</td>
+							<td>LAB</td>
+							<td>TOTAL</td>
+						</tr>
+
+						<tr>
+							<td id="semester-summer" rowspan="6" style="writing-mode:sideways-lr; padding-right: 20px;">1st Semester</td>
+							<td> </td>
+							<td>LIT 11</td>
+							<td class="subject-green">Literatures of the World</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-CPSTONE40</td>
+							<td class="subject-blue">Capstone Project 2</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td>IT-CPSTONE30</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-EL_ _ _ _ _ _</td>
+							<td>IT Elective 3</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>
+								<div class="green-circle"></div>
+							</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-EL_ _ _ _ _ _</td>
+							<td>IT Elective 4</td>
+							<td>2</td>
+							<td>1</td>
+							<td>3</td>
+							<td>
+								<div class="green-circle"></div>
+							</td>
+						</tr>
+
+						<tr>
+							<td> </td>
+							<td>IT-FRE_ _ _ _ _</td>
+							<td>Free Elective 4</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td style="display: flex; flex-direction:row; border:none">
+								<div class="green-circle"></div>
+								<div class="green-circle"></div>
+							</td>
+						</tr>
+
+						<tr id="table-header-summer">
+							<td colspan="3" style="text-align: right">Total</td>
+							<td colspan="3" style="text-align: right"> 6</td>
+							<td> </td>
+						</tr>
+					</table>
+
+					<!--Fourth Year - Second Semester-->
+					<table>
+						<tr align="center" id="table-header-fourth">
+							<td id="sem-no-fourth" rowspan="2">8</td>
+							<td rowspan="2" style="writing-mode:sideways-lr; padding-right: 20px">Grades</td>
+							<td rowspan="2">Course Code</td>
+							<td rowspan="2">Descriptive Title</td>
+							<td colspan="3">Units</td>
+							<td rowspan="2">Pre-requisites <br />/ Remarks</td>
+						</tr>
+
+						<tr align="center" style="font-size: 10px" id="table-header-fourth">
+							<td>LEC</td>
+							<td>LAB</td>
+							<td>TOTAL</td>
+						</tr>
+
+						<tr>
+							<td id="semester-summer" rowspan="6" style="writing-mode:sideways-lr; padding-right: 20px;">2nd Semester</td>
+							<td> </td>
+							<td>CC-PRACT40</td>
+							<td class="subject-blue">PRACTICIUM</td>
+							<td>3</td>
+							<td> </td>
+							<td>3</td>
+							<td></td>
+						</tr>
+
+						<tr class="no-subject">
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr class="no-subject">
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr class="no-subject">
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr class="no-subject">
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+
+						<tr id="table-header-summer">
+							<td colspan="3" style="text-align: right">Total</td>
+							<td colspan="3" style="text-align: right"> 6</td>
+							<td> </td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+
+		</div>
+		
+	</body>
+</html>
